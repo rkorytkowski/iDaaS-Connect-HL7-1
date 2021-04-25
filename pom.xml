@@ -4,7 +4,7 @@
     <!--Internel Project Details-->
     <groupId>io.connectedhealth_idaas.hl7</groupId>
     <artifactId>io.connectedhealth_idaas.hl7</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2021.02.01-SNAPSHOT</version>
 
     <properties>
         <spring.version>3.2.4.RELEASE</spring.version>
