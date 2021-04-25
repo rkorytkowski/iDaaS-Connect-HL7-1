@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <!--Internel Project Details-->
     <groupId>io.connectedhealth_idaas.hl7</groupId>
-    <artifactId>io.connectedhealth_idaas.hl7</artifactId>
-    <version>2021.02.01-SNAPSHOT</version>
+    <artifactId>io.connectedhealth_idaas_hl7</artifactId>
+    <version>2021.03.01-SNAPSHOT</version>
 
     <properties>
         <spring.version>3.2.4.RELEASE</spring.version>
         <spring.boot.version>2.3.7.RELEASE</spring.boot.version>
-        <camel.version>3.6.0</camel.version>
+        <camel.version>3.7.3</camel.version>
         <hapi-version>2.3</hapi-version>
     </properties>
 
