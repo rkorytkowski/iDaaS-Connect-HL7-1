@@ -1,4 +1,4 @@
-# Open-iDaaS-Connect-HL7
+# iDaaS Connect HL7
 Upstream of iDaaS Connect HL7: Designed to simplify HL7 integration platform development and delivery.
 iDAAS has several key components that provide many capabilities. iDAAS Connect is intended ONLY
 to enable iDAAS connectivity. iDAAS-Connect-HL7 specifically ONLY deals with enabling
