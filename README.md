@@ -125,20 +125,11 @@ idaas.vxuPort=10008
 Here are a few ways you can get or stay involved.
 
 ## Ongoing Enhancements
-We maintain all enhancements within the Git Hub portal under the
-<a href="https://github.com/RedHat-Healthcare/iDAAS-Connect-HL7/projects" target="_blank">projects tab</a>
+We maintain all enhancements within the Git Hub portal under the projects tab, please feel free to make recommendations our goal is to continually improve.
 
 ## Defects/Bugs
-All defects or bugs should be submitted through the Git Hub Portal under the
-<a href="https://github.com/RedHat-Healthcare/iDAAS-Connect-HL7/issues" target="_blank">issues tab</a>
+All defects or bugs should be submitted through the Git Hub Portal under the issues tab
 
-## Chat and Collaboration
-You can always leverage <a href="https://redhathealthcare.zulipchat.com" target="_blank">Red Hat Healthcare's ZuilpChat area</a>
-and find all the specific areas for iDAAS-Connect-HL7. We look forward to any feedback!!
 
-If you would like to contribute feel free to, contributions are always welcome!!!!
 
 Happy using and coding....
-
-
-
