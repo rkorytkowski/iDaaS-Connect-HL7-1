@@ -62,7 +62,6 @@ Server socket (one socket per datatype) and typically stay connected.
     d. The acknowledgement is also sent to the auditing topic location.<br/>
 
 # Start The Engine!!!
-
 This section covers the running of the solution. There are several options to start the Engine Up!!!
 
 ## Step 1: Kafka Server To Connect To
@@ -81,16 +80,9 @@ the application uses. In order to do this we MUST set the server.port property o
 components will fail to start. iDaaS Connect HL7 uses 9980. You can change this, but you will have to ensure other applications are not
 using the port you specify.
 
-## Running
-In order to run multiple iDaaS integration applications we had to ensure the internal http ports that
-the application uses. In order to do this we set the server.port property. We have tried to keep these internally
-separate. iDaaS Connect HL7 uses 9980. You can change this, but you will have to ensure other applications are not
-using the port you specify.
-
 ```properties
 server.port=9980
 ```
-
 Once built you can run the solution by executing `./platform-scripts/start-solution.sh`.
 The script will startup Kafka and iDAAS server.
 
@@ -100,7 +92,7 @@ The script will startup iDAAS server.
 
 It is possible to overwrite configuration by:
 1. Providing parameters via command line e.g.
-   `./start-solution.sh --idaas.adtPort=10009`
+`./start-solution.sh --idaas.adtPort=10009`
 2. Creating an application.properties next to the idaas-connect-hl7.jar in the target directory
 3. Creating a properties file in a custom location `./start-solution.sh --spring.config.location=file:./config/application.properties`
 
@@ -117,6 +109,25 @@ idaas.mdmPort=10006
 idaas.schPort=10007
 idaas.vxuPort=10008
 ```
+
+### Running the App: Maven
+You can use Maven from the command line, you would need to go the specific directory where this code exists and has a pom.xml and then run the
+command: mvn clean install
+
+### Running the App: From Your Code Editor/IDE
+You can right click on Application.java file and select Run in the src directory.
+
+### Running the App from Command Line
+You will need to have built the application into a jar.
+
+1. You download the code
+2. You build the code into a jar
+3. Move the application.properties file from the \src\main\resources to where you would like it or just remember the location as it
+it will be needed later
+4. Make sure you have a Kafka instance up and running to process data with
+5. Go to a command line and execute java -jar <jarlocation>/<jarname.jar> --spring.config.location=file: ./<directory>/application.properties`
+
+Happy using and coding....
 
 # Getting Involved
 Here are a few ways you can get or stay involved.
