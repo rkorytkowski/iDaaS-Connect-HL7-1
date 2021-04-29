@@ -78,6 +78,11 @@
             <version>${camel.version}</version>
         </dependency>
         <!-- Apache Camel Components -->
+        <!-- Servlet -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-servlet</artifactId>
+        </dependency>
         <!-- HL7 -->
         <dependency>
             <groupId>org.apache.camel</groupId>
