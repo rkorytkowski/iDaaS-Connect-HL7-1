@@ -81,9 +81,6 @@ the application uses. In order to do this we MUST set the server.port property o
 components will fail to start. iDaaS Connect HL7 uses 9980. You can change this, but you will have to ensure other applications are not
 using the port you specify.
 
-### Automated Builds
-Automated Builds are going to be done in Azure Pipelines
-
 ## Running
 In order to run multiple iDaaS integration applications we had to ensure the internal http ports that
 the application uses. In order to do this we set the server.port property. We have tried to keep these internally
