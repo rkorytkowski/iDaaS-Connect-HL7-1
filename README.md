@@ -1,3 +1,5 @@
+We are currently working thtough some issues with errors preventing Camel from running as a SpringBoot application. The community is working on it and we apologize for the inconvenience. Please feel free to look at https://github.com/RedHat-Healthcare/iDaaS-Connect. This solution upstream continues to run.
+
 # iDaaS Connect HL7
 This is the upstream for RedHat Healthcare's <a href="https://github.com/RedHat-Healthcare/iDaaS-Connect/tree/master/iDaaS-Connect-HL7" target="_blank">iDaaS Connect HL7</a>. iDaaS Connect HL7 is designed to simplify HL7 integration platform development and delivery.
 iDAAS has several key components that provide many capabilities. iDAAS Connect is intended ONLY
