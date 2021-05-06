@@ -7,33 +7,25 @@
     <version>2021.04</version>
 
     <properties>
-        <spring.boot.version>2.3.10.RELEASE</spring.boot.version>
         <camel.version>3.9.0</camel.version>
-        <hapi-version>2.3</hapi-version>
+        <springboot.version>2.4.4</springboot.version>
     </properties>
     <!-- https://camel.apache.org/releases/release-3.9.0/ -->
     <dependencyManagement>
         <dependencies>
-            <!-- Camel BOM -->
-           <dependency>
-               <groupId>org.apache.camel.springboot</groupId>
-               <artifactId>camel-spring-boot-dependencies</artifactId>
-               <version>3.9.0</version>
-               <type>pom</type>
-               <scope>import</scope>
-           </dependency>
+            <!-- Spring Boot BOM -->
             <dependency>
-                <groupId>org.apache.camel.springboot</groupId>
-                <artifactId>camel-spring-boot-bom</artifactId>
-                <version>3.9.0</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${springboot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- BOM File - Camel Spring Boot -->
+            <!-- Camel BOM -->
             <dependency>
                 <groupId>org.apache.camel.springboot</groupId>
                 <artifactId>camel-spring-boot-dependencies</artifactId>
-                <version>3.9.0</version>
+                <version>${camel.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -45,61 +37,41 @@
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-core</artifactId>
-                <version>1.6.0</version>
             </dependency>
             <!-- Spring Boot -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot</artifactId>
-                <version>${spring.boot.version}</version>
-                <!--<version>2.2.2.RELEASE</version>-->
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot</artifactId>
-                <version>2.3.10.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>2.3.10.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-autoconfigure</artifactId>
-                <version>${spring.boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.camel.springboot</groupId>
                 <artifactId>camel-spring-boot-starter</artifactId>
-                <version>2.25.3</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
-                <version>${spring.boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <version>${spring.boot.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-configuration-processor</artifactId>
-                <version>${spring.boot.version}</version>
             </dependency>
             <!-- Apache Camel Components -->
             <!-- HL7 -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-netty</artifactId>
-                <version>${camel.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-servlet</artifactId>
             </dependency>
            <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-hl7</artifactId>
-                <version>${camel.version}</version>
             </dependency>
             <!--<dependency>
                 <groupId>org.apache.camel</groupId>
@@ -110,66 +82,51 @@
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-kafka</artifactId>
-                <version>${camel.version}</version>
             </dependency>
             <!-- Bean -->
             <dependency>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-bean</artifactId>
-                <version>${camel.version}</version>
             </dependency>
             <!-- HL7 HAPI Specific Camel Support Libraries-->
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
-                <artifactId>hapi-base</artifactId>
-                <version>${hapi-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v21</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v22</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v23</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v231</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v24</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v25</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v251</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>ca.uhn.hapi</groupId>
                 <artifactId>hapi-structures-v26</artifactId>
-                <version>${hapi-version}</version>
                 <optional>true</optional>
             </dependency>
             <!-- Logging -->
@@ -186,37 +143,20 @@
         </profile>
     </profiles>
 
-    <repositories>
-        <repository>
-            <id>jboss-maven2-release-repository</id>
-            <url>https://repo1.maven.org/maven2/</url>
-        </repository>
-        <repository>
-            <id>jboss-maven2-artifact-repository</id>
-            <url>https://mvnrepository.com/artifact/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-       <pluginRepository>
-            <id>jboss-maven2-release-repository</id>
-            <url>https://repo1.maven.org/maven2/</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>jboss-maven2-artifact-repository</id>
-            <url>https://mvnrepository.com/artifact/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

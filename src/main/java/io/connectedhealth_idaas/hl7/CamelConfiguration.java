@@ -417,7 +417,7 @@ public class CamelConfiguration extends RouteBuilder {
                 .wireTap("direct:auditing");
 
         // SCH
-        from(getHL7Uri(config.getMdmPort()))
+        from(getHL7Uri(config.getSchPort()))
                 .routeId("hl7Schedule")
                 .convertBodyTo(String.class)
                 // set Auditing Properties
